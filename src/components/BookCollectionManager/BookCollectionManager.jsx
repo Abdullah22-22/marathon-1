@@ -130,12 +130,12 @@ function BookCollectionManager() {
               <li key={index} className="book-item">
                 <div className="book-info">
                   <span className="book-title">{book.title}</span>
-                  <span className="book-author">by {book.author}</span>
-                  <span className="book-genre">{book.genre}</span>
-                  <span className="book-language">{book.language}</span>
-                  <span className="book-edition">{book.edition}</span>
-                  <span className="book-pages">{book.pages}</span>
-                  <span className="book-rating">{book.rating}</span>
+                  <span className="book-author">By: {book.author}</span>
+                  <span className="book-genre">Genre: {book.genre}</span>
+                  <span className="book-language">Language: {book.language}</span>
+                  <span className="book-edition">Edition: {book.edition}</span>
+                  <span className="book-pages">Amount of pages: {book.pages}</span>
+                  <span className="book-rating">Raiting: {book.rating}</span>
                 </div>
                 <button
                   onClick={() => deleteBook(index)}
