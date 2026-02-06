@@ -2,24 +2,23 @@ import React, { useState } from "react";
 import "./ContactListManager.css";
 
 function ContactListManager() {
-  	const [contacts, setContacts] = useState([]);
-  	const [name, setName] = useState("");
-  	const [email, setEmail] = useState("");
-  	const [jobTitle, setJobTitle] = useState("");
-  	const [birthday, setBirthday] = useState("");
-  	const [notes, setNotes] = useState("");
-  	const [website, setWebsite] = useState("");
-  	const [favorite, setFavorite] = useState(false);
+  	const [contacts, setContacts] 	= useState([]);
+  	const [name, setName] 		= useState("");
+  	const [email, setEmail] 	= useState("");
+  	const [jobTitle, setJobTitle] 	= useState("");
+  	const [birthday, setBirthday] 	= useState("");
+  	const [notes, setNotes] 	= useState("");
+  	const [website, setWebsite] 	= useState("");
+  	const [favorite, setFavorite] 	= useState(false);
 
-  	// Handle input change for name
   	function handleNameChange(event) {
   	  	setName(event.target.value);
   	}
 
-  	// Handle input change for email
   	function handleEmailChange(event) {
 	  	  setEmail(event.target.value);
   	}
+
 	function handleJobChange(event){
 		setJobTitle(event.target.value);
 	}
@@ -42,7 +41,12 @@ function ContactListManager() {
 
   	// Add a new contact to the list
   	function addContact() {
-  	  	if (name.trim() !== "" && email.trim() !== "") {
+
+		if(name.trim() === "" || email.trim() === ""){
+			console.log("Name or email is null");
+			return false;
+		}
+
   	    	setContacts((c) => [...c, { name, email, jobTitle, 
 			birthday, notes, website, favorite}]);
   	    	setName("");
@@ -52,7 +56,7 @@ function ContactListManager() {
 		setWebsite("");
 		setBirthday("");
 		setFavorite(false);
-  	  	}
+  	  	
   	}
 
   // Delete a contact from the list
@@ -64,9 +68,8 @@ function ContactListManager() {
 	const favorite_classes = "input-field favorite";
 
   	return (
-  	  	<div className="app-container">
+  	  	<div className="app-container">	
 	  	    <h1>Contact List Manager</h1>
-  	    
   			<div className="input-section">
   		      	<input
   		        type="text"
