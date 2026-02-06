@@ -35,7 +35,7 @@ function SignupPage() {
         placeholder="Confirm Password"
         value={confirmPassword}
         onChange={(e) => setConfirmPassword(e.target.value)}
-        style={{ borderColor: passwordMatch ? "green" : "red" }} // سبز اگر مطابقت دارد
+        style={{ borderColor: passwordMatch ? "green" : "red" }}
       />
 
       <select value={nationality} onChange={(e) => setNationality(e.target.value)}>
