@@ -1,0 +1,57 @@
+.main{
+    max-width: 800px;
+    margin:  20px auto;
+    padding: 16px;
+}
+
+.form {
+    display:  flex;
+    gap: 9px;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.form input {
+    padding: 10px;
+    border: 2px solid rgb(87, 87, 128);
+    border-radius: 20px;
+    
+}
+
+.form input:hover {
+    border: 2px solid blue;
+}
+
+.form button{
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+}
+.form button:hover{
+    border: 2px solid blue;
+}
+
+.list {
+    list-style: none ;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.item span,
+.item .checkbox{
+    display: block;
+    color: #444;
+} 
+
+.item button {
+    height: fit-content;
+    padding: 8px 10px;
+
+    border-radius: 20px;
+}
+
+.item button:hover{
+    border: 2px solid blue;
+}
