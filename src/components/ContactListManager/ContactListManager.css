@@ -42,6 +42,10 @@ body {
   color: #131424;
 }
 
+.input-field:hover {
+	border: 2px solid #06211c;
+}
+
 .input-field:focus {
   outline: none;
   border-color: #3498db;
@@ -51,6 +55,7 @@ body {
 .favorite {
 	margin-bottom: 0;
 	font-size: 18px;
+	font-style: bold;
 	padding-left: 193px;
 	color: #131424;
 }

@@ -70,26 +70,26 @@ function ContactListManager() {
   			<div className="input-section">
   		      	<input
   		        type="text"
-  		        placeholder="Enter contact name..."
+  		        placeholder="Name"
   		        value={name}
   		        onChange={handleNameChange}
   		        className="input-field"
   		      />
   		      <input
   		        type="email"
-  		        placeholder="Enter email address..."
+  		        placeholder="Email"
   		        value={email}
   		        onChange={handleEmailChange}
   		        className="input-field"
   		      />
   		      <input
   		        type="text"
-  		        placeholder="Enter job title..."
+  		        placeholder="Job Title"
   		        value={jobTitle}
   		        onChange={handleJobChange}
   		        className="input-field"
   		      />
-			<label htmlFor="birthday">Enter birthday</label>
+			<label htmlFor="birthday">Birthday</label>
   		      <input
   		        type="date"
 			id="birthday"
@@ -100,14 +100,14 @@ function ContactListManager() {
   		      />
   		      <input
   		        type="text"
-  		        placeholder="Enter notes..."
+  		        placeholder="Additional Notes"
   		        value={notes}
   		        onChange={handleNotesChange}
   		        className="input-field"
   		      />
   		      <input
   		        type="text"
-  		        placeholder="Enter a Website"
+  		        placeholder="Website"
   		        value={website}
   		        onChange={handleWebsiteChange}
   		        className="input-field"
